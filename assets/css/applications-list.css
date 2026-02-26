@@ -1,1 +1,110 @@
-html{height:100%}body{min-height:100%;display:flex;flex-direction:column;line-height:1.6;overflow-x:hidden}main{flex:1 0 auto}.footer{flex-shrink:0}.app-category-title{font-family:var(--special-font);font-size:3rem;font-weight:700;color:var(--title-color);margin-top:4rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--border-color,#e0e0e0);text-align:center}.app-category-title:first-of-type{margin-top:2.5rem}.app-list-container{display:grid;grid-template-columns:1fr;gap:2rem}.app-list-container:last-child{margin-bottom:5rem}.app-card{display:flex;align-items:center;gap:1.5rem;padding:1.5rem;background-color:var(--container-color,#fff);border:1px solid var(--border-color,#e0e0e0);border-radius:12px;text-decoration:none;color:inherit;box-shadow:0 4px 15px rgb(0 0 0 / .05);transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease}.app-card:hover{transform:translateY(-5px);box-shadow:0 8px 30px rgb(0 0 0 / .1);border-color:#ccc}.app-card__logo{flex-shrink:0;width:60px;height:60px;display:flex;align-items:center;justify-content:center;background-color:#f0f0f0;border-radius:50%;color:var(--title-color)}.app-card__logo i{font-size:2rem}.app-card__text{flex-grow:1}.app-card__title{font-family:var(--body-font);font-size:1.25rem;font-weight:700;color:var(--title-color);margin-bottom:.25rem}.app-card__description{font-size:.95rem;line-height:1.6;color:var(--text-color)}@media (min-width:768px){.app-list-container{grid-template-columns:repeat(2,1fr)}}
+/* applications-list.css */
+
+/* ======================== Genel Kurallar ======================== */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+/* ======================== UYGULAMA ALANLARI - KART STİLLERİ ======================== */
+.app-category-title {
+    font-family: var(--special-font);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color, #e0e0e0);
+    text-align: center;
+}
+
+.app-category-title:first-of-type {
+    margin-top: 2.5rem;
+}
+
+.app-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.app-list-container:last-child {
+    margin-bottom: 5rem;
+}
+
+.app-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--container-color, #fff);
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-color: #ccc;
+}
+
+.app-card__logo {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    color: var(--title-color);
+}
+
+.app-card__logo i {
+    font-size: 2rem;
+}
+
+.app-card__text {
+    flex-grow: 1;
+}
+
+.app-card__title {
+    font-family: var(--body-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+}
+
+.app-card__description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Mobil Uyumluluk */
+@media (min-width: 768px) {
+    .app-list-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

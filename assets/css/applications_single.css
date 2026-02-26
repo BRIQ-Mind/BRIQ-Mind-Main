@@ -1,1 +1,67 @@
-.content-body section{padding-bottom:2rem;margin-bottom:2rem;border-bottom:1px solid var(--legal-border,#e0e0e0)}a.cta-button{font-family:var(--special-font);font-size:var(--h3-font-size);font-weight:700;color:var(--title-color);background:none;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;position:relative;padding-bottom:8px}.cta-button::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:4.5px;background-color:var(--title-color);border-radius:3rem}.cta-button:hover{transform:translateY(-3px)}.content-body section:last-of-type{border-bottom:none;margin-bottom:0}.app-image-container{margin:1.5rem 0;max-width:550px}.app-image{width:100%;height:auto;border-radius:12px;background-color:#fff0}@media (min-width:768px){.app-image-container{float:right;margin-left:2rem;margin-top:.5rem;width:45%}}
+/* about-style.css */
+
+/* ======================== Genel Kurallar ======================== */
+.content-body section {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--legal-border, #e0e0e0);
+}
+
+/* ======================== EYLEME ÇAĞRI BUTONU (CTA) ======================== */
+a.cta-button {
+    font-family: var(--special-font);
+    font-size: var(--h3-font-size);
+    font-weight: 700;
+    color: var(--title-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4.5px;
+    background-color: var(--title-color);
+    border-radius: 3rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.content-body section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.app-image-container {
+    margin: 1.5rem 0;
+    max-width: 550px;
+}
+
+.app-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+/* Mobil Uyumluluk */
+@media (min-width: 768px) {
+    .app-image-container {
+        float: right;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        width: 45%;
+    }
+}
