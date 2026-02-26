@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-Content \"C:\\\\Users\\\\bdeni\\\\OneDrive\\\\Masaüstü\\\\project_BRIQ_v2\\\\assets\\\\js\\\\script.js\")",
+      "Bash(Measure-Object -Line)",
+      "Bash(powershell -Command \":*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\bdeni\\\\OneDrive\\\\Masaüstü\\\\project_BRIQ_v2\\\\update_nav.ps1\")",
+      "Bash(powershell -Command \"Get-Location\")",
+      "Bash(del \"C:\\\\Users\\\\bdeni\\\\OneDrive\\\\Masaüstü\\\\project_BRIQ_v2\\\\update_nav.ps1\")",
+      "Bash(powershell -Command \"Remove-Item ''C:\\\\Users\\\\bdeni\\\\OneDrive\\\\Masaüstü\\\\project_BRIQ_v2\\\\update_nav.ps1''\")",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git push:*)",
+      "Bash(git init:*)",
+      "Bash(git fetch:*)",
+      "Bash(git reset:*)",
+      "Bash(find /c/Users/bdeni/OneDrive/Masaüstü/project_BRIQ_v2 -name \"*.html\" ! -path \"*/.git/*\" -exec sed -i 's|<a href=\"\"https://ai\\\\.briqmind\\\\.com/research/\"\"[^>]*>Araştırmalar</a>|<a href=\"\"https://birk.briqmind.com\"\" class=\"\"nav__link\"\">Birk ile Tanış</a>|g; s|<a href=\"\"https://ai\\\\.briqmind\\\\.com/research\"\"[^>]*>Araştırmalar</a>|<a href=\"\"https://birk.briqmind.com\"\">Birk ile Tanış</a>|g' {} ;)"
+    ]
+  }
+}

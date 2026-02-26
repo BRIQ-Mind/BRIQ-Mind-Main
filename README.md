@@ -1,1 +1,0 @@
-# BRIQ-Mind-Main
